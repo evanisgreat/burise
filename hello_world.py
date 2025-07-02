@@ -1,10 +1,8 @@
-print("hello world")
+import timeit
+from math import sqrt
 
-print("this is a test")
+def example():
+    a = [x ** 2 for x in range(10001)]
 
-if True:
-    print("score")
-
-
-print('yes')
+print(timeit.timeit(example, number=1))
     
